@@ -8,46 +8,19 @@ import { Typography } from "@mui/joy";
 
 export default function NavBarList() {
   return (
-    <Box
-      sx={{
-        left: 0,
-        justifyContent: "center",
-        flexWrap: "wrap",
-        top: 36,
-        backgroundColor: "#121212",
-        padding: 0,
-        margin: -1,
-        height: 703
-      }}
-    >
-      <List
-        size="sm"
-        variant="plain"
-        sx={{
-          maxWidth: 366,
-          top: 70,
-        }}
-      >
+    <Box sx = {{position:"absolute", top:120, left:35,}}>
+      <List orientation="horizontal">
         <ListItem>
-          <ListItemButton sx = {{color:"white"}}>All Boards</ListItemButton>
+          <ListItemButton sx = {{color:"white"}}>
+            Account
+          </ListItemButton>
         </ListItem>
         <ListItem>
-          <ListItemButton sx = {{color:"white"}}>Favorites</ListItemButton>
-        </ListItem>
-        <ListItem>
-          <ListItemButton sx = {{color:"white"}}>AI Assistant</ListItemButton>
-        </ListItem>
-        <ListItem>
-          <ListItemButton sx = {{color:"white"}}>AI Agent</ListItemButton>
+          <ListItemButton sx = {{color:"white"}}>
+            Settings
+          </ListItemButton>
         </ListItem>
       </List>
-        <div style = {{position: "absolute", top:350,}}>
-      <Typography sx = {{padding:"15px"}}>Organize your boards</Typography>
-      <Typography sx = {{padding:"15px"}}>Rooms are designated spaces for projects or groups. </Typography>
-      <Typography sx = {{padding:"15px"}}>Rooms can have their own members and permissions.</Typography>
-      <Typography sx = {{padding:"15px"}}>Click the “+” icon to create a room</Typography>
-        </div>
-     
     </Box>
   );
 }

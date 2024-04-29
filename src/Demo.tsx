@@ -1,27 +1,42 @@
 import * as React from "react";
-import Card from "@mui/joy/Card";
-import Typography from "@mui/joy/Typography";
+import Box from '@mui/joy/Box';
+import Typography from '@mui/joy/Typography';
+import AvatarIcons from "./components/Avatar";
+import FreeButton from "./components/FreeButton";
+import List from "./components/List";
+import BigAvatarIcons from "./components/BigAvatar";
+import ChangeAvatarButton from "./components/ChangeAvatar";
 import Email from "./components/Email";
-import Password from "./components/Password";
-import AspectRatio from "@mui/joy/AspectRatio";
-import LogInButton from "./components/LogInButton";
-import ForgotPassword from "./components/ForgotPassword";
-import { extendTheme } from "@mui/joy";
-import Selector from "./components/Selector";
-import NavbarCard from "./components/NavbarCard";
-import NavBarList from "./components/List";
-import Box from "@mui/joy/Box";
-import FeedBackButton from "./components/FeedBackButton";
-import NewBoard from "./components/NewBoard";
+import Username from "./components/Username";
+import City from "./components/City";
+import ZipCode from "./components/ZipCode";
 
-export default function BoardXHome() {
+
+
+export default function ProfileSettings() {
   return (
-    <Box sx = {{height:"100px", backgroundColor:"blue", margin:0,}}>
-      <NavbarCard />
-      <NavBarList />
-      <FeedBackButton />
-      <Typography variant="plain" level = "h2" sx = {{position:"absolute", top:100, left:450, color:"white"}}>All Boards</Typography>
-      < NewBoard />
+    <Box sx={{ backgroundColor:"#121212", height:"100vh", margin:-1, padding:0}}>
+      <Typography>
+        <a href="URL" style={{ color:"white", position:"absolute", left:35, top:5 }}>Back to Home</a>
+      </Typography>
+      <AvatarIcons />
+      <FreeButton />
+      <Typography level="h1" sx = {{color:"white", position:"absolute", top:70, left:35}}>Profile & Settings</Typography>
+      <List />
+      <BigAvatarIcons />
+      <Typography level = "h4" sx = {{color:"white", position:"absolute", top:180, left:150}}>
+        Nammari Drayton
+      </Typography>
+      <ChangeAvatarButton />
+      <Typography level = "h4" sx = {{color:"white", position:"absolute", top:300, left:45}}>
+        Contact Info
+      </Typography>
+      <Email />
+      <Username />
+      <City />
+      <ZipCode />
+     
+
     </Box>
   );
 }

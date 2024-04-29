@@ -5,13 +5,13 @@ import FormLabel from '@mui/joy/FormLabel';
 import FormHelperText from '@mui/joy/FormHelperText';
 import { InfoOutlined } from "@mui/icons-material";
 
-export default function InfoBar() {
+export default function Email() {
   return (
     <FormControl>
       <Input
       variant="outlined"
       color="neutral"
-      sx={{ backgroundColor: "#0B0D0E", "--Input-focusedHighlight": "gray" }}
+      sx={{top:400, left:45, width:700, backgroundColor: "#0B0D0E", "--Input-focusedHighlight": "gray" }}
       placeholder="Email"
     />
     
